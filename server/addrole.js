@@ -8,6 +8,5 @@ module.exports = {
         let role = message.guild.roles.cache.find(r => r.name === askrole);
         
         message.channel.send(role)
-        message.channel.send(askrole)
     } 
 };
