@@ -24,7 +24,6 @@ module.exports = {
         // Set the main content of the embed
         .setDescription(`${message.author} added ${role} role to ${member}`);
       // Send the embed to the same channel as the message
-        message.delete()
         member.roles.add(role)
         message.channel.send(embed)      
     } 
