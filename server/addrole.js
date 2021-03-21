@@ -3,8 +3,9 @@ module.exports = {
     description: 'add a role',
     execute(message) {
         const { Client, MessageEmbed } = require('discord.js');
-        let role = message.guild.roles.cache.find(r => r.name === role);
         let member = message.mentions.members.first();
+        let askrole = message.content.substring(7);
+        let role = message.guild.roles.cache.find(r => r.name === askrole);
 
          // If the author don't have perm
          if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send('You can\'t use that!');
