@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'mute',
-    description: 'Add a muted role',
+    name: 'addrole',
+    description: 'Add a role',
     execute(message) {
         const { Client, MessageEmbed } = require('discord.js');
         let askedrole = message.content.substring(31);
